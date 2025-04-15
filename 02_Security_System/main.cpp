@@ -13,6 +13,7 @@ int main(){
     string old_pass, word1, password1, password2;
     string creds[2], cp[2];
 
+    system("clear");
     cout << "       Security System          " << endl;
     cout << " ______________________________ " << endl;
     cout << "|      1.Register              |" << endl;
@@ -41,8 +42,9 @@ int main(){
                 ofstream of1;
                 of1.open("file.txt");
                 if(of1.is_open()){
-                    of1 << user_name << "\n";
-                    of1 << password0;
+                    of1 << user_name << endl;
+                    of1 << password0 << endl;
+                    of1 << age << endl;
                     cout << "Registration is SUCCESSFULL!" << endl;
                 }
                 of1.close();
@@ -76,9 +78,9 @@ int main(){
                         if(user == creds[0] && pass == creds[1]){
                             cout << "\nLOGIN SUCCESSFULL!!" << endl<<endl;
                             cout << "_____Details________"<< endl;
-                            cout << "User name: " << user << endl;
-                            cout << "Password: " << pass << endl;
-                            cout << "Age: " << age << endl;
+                            cout << "User name: " << creds[0] << endl;
+                            cout << "Password: " << creds[1] << endl;
+                            cout << "Age: " << creds[2] << endl;
                         }
                         else{
                             cout << "\nIncorrect Credentials: Check username and password first!" << endl;
