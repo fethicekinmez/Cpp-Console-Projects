@@ -23,4 +23,7 @@ int main(){
             }
         }
     }
+    image.close();
+    
+    return 0;
 }
