@@ -7,7 +7,7 @@ using namespace std;
 int main(){
 
     fstream myFile;
-    myFile.open("text.txt", ios::in);
+    myFile.open("text.txt", ios::in); // Open the file in read mode
 
     if(myFile.is_open()){
         string line;
