@@ -6,13 +6,13 @@ using namespace std;
 int main(){
     string s1 = "Lemon and lemonade";
 
-    ofstream file("file.txt");
-    file << s1;
-    file.close();
+    ofstream file("file.txt"); // Create a file
+    file << s1; // Write to file
+    file.close(); // Close the file
 
-    ifstream file2("file.txt");
+    ifstream file2("file.txt"); // Open the file
     string s2;
-    while (file2 >> s2)
+    while (file2 >> s2)  
     {
         cout << s2 << endl;
     }
