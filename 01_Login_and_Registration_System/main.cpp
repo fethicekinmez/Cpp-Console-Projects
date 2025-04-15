@@ -105,7 +105,6 @@ void forgot(){
     {
         case 1:
         {
-            system("clear");
             bool flag = false;
             string s_userName, s_name, s_pass;
             cout << "\t Enter a user name: ";
@@ -118,13 +117,14 @@ void forgot(){
                 }
             }
             s_file.close();
-            system("clear");
             if(flag){
+                system("clear");
                 cout << "your password is " << s_pass << endl;
                 main();
             }
             else{
                 cout << "Your account is NOT FOUND!" << endl;
+                system("clear");
                 main();
             }
         }
