@@ -123,8 +123,8 @@ void forgot(){
                 main();
             }
             else{
-                cout << "Your account is NOT FOUND!" << endl;
                 system("clear");
+                cout << "Your account is NOT FOUND!" << endl;
                 main();
             }
         }
